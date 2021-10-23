@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarin_calculator_6.MainPage">
+
+    <Grid Padding="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label x:Name="Labelnum" Text="num:" Grid.Row="0" Grid.Column="0"/>
+        <Entry x:Name="num" Placeholder="Enter Equation:" Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="1" />
+
+        <Button x:Name="Btn1" Text="1" Grid.Row="3" Grid.Column="0" Clicked="Number_Clicked" />
+        <Button x:Name="Btn2" Text="2" Grid.Row="3" Grid.Column="1" Clicked="Number_Clicked" />
+        <Button x:Name="Btn3" Text="3" Grid.Row="3" Grid.Column="2" Clicked="Number_Clicked" />
+        <Button x:Name="Btn4" Text="4" Grid.Row="4" Grid.Column="0" Clicked="Number_Clicked" />
+        <Button x:Name="Btn5" Text="5" Grid.Row="4" Grid.Column="1" Clicked="Number_Clicked" />
+        <Button x:Name="Btn6" Text="6" Grid.Row="4" Grid.Column="2" Clicked="Number_Clicked" />
+        <Button x:Name="Btn7" Text="7" Grid.Row="5" Grid.Column="0" Clicked="Number_Clicked" />
+        <Button x:Name="Btn8" Text="8" Grid.Row="5" Grid.Column="1" Clicked="Number_Clicked" />
+        <Button x:Name="Btn9" Text="9" Grid.Row="5" Grid.Column="2" Clicked="Number_Clicked" />
+        <Button x:Name="Btn0" Text="0" Grid.Row="6" Grid.Column="0" Clicked="Number_Clicked" />
+        <Button x:Name="calc" Text="=" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2" Clicked="calc_Clicked" />
+
+        <Button x:Name="BtnAdd" Text="+" Grid.Row="7" Grid.Column="0" Clicked="Number_Clicked" />
+        <Button x:Name="BtnSub" Text="-" Grid.Row="7" Grid.Column="1" Clicked="Number_Clicked" />
+        <Button x:Name="BtnMul" Text="*" Grid.Row="7" Grid.Column="2" Clicked="Number_Clicked" />
+        <Button x:Name="BtnDiv" Text="/" Grid.Row="8" Grid.Column="0" Clicked="Number_Clicked" />
+        <Button x:Name="BtnClr" Text="Clear" Grid.Row="8" Grid.Column="1" Grid.ColumnSpan="2" Clicked="BtnClr_Clicked" />
+
+        <!--<Button x:Name="toPositive" Text="To positive number" Grid.Row="9" Grid.Column="0" Clicked="toPositive_Clicked" />
+        <Button x:Name="toNegitive" Text="To negitive number" Grid.Row="9" Grid.Column="1" Clicked="toNegitive_Clicked" />-->
+
+
+    </Grid>
+
+</ContentPage>
